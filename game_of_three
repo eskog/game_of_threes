@@ -1,0 +1,15 @@
+#!/usr/bin/python
+
+usernumber = raw_input("Enter your starting number: ");
+number = int(usernumber)
+
+while number != 1:
+    if number % 3 == 0:
+        number = number / 3
+        print number;
+    elif number % 3 == 1:
+        print(number, "- 1")
+        number = number - 1
+    elif number % 3 == 2:
+        print(number, "+ 1")
+        number = number + 1
