@@ -1,7 +1,15 @@
 #!/usr/bin/python
 
-usernumber = raw_input("Enter your starting number: ");
-number = int(usernumber)
+legitImput = False
+while not legitImput:
+    try:
+        number = int(raw_input("Enter your starting number: "));
+        #number = int(usernumber)
+    except ValueError as e:
+        print(e)
+        print("Try again")
+    else:
+        legitImput = True
 
 while number != 1:
     if number % 3 == 0:
